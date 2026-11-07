@@ -1,0 +1,32 @@
+{
+  "case_id": "live-dev-001",
+  "proposal_id": "p001",
+  "status": "awaiting_human_review",
+  "decision": null,
+  "automated_report": true,
+  "actual_agents": [
+    "triager",
+    "engineer",
+    "verifier"
+  ],
+  "baseline": {
+    "tests": 6,
+    "failures": [
+      "test_checkout.ShippingContract.test_decimal_input",
+      "test_checkout.ShippingContract.test_exact_threshold"
+    ],
+    "exit_code": 1
+  },
+  "candidate": {
+    "tests": 6,
+    "failures": [],
+    "exit_code": 0
+  },
+  "source_sha256": "aee43e9c3ba5c5e0d00cbe2a7c7e9674ddb110d397d58badedcdf25c74992bdb",
+  "contract_sha256": "a6e7cdc43bc12fee240658a04292976ecbacf9bcfe8c52c382e428f30851f8a7",
+  "explanation": "Root cause: strict > excludes exactly $100. Change > to >= so shipping is free at the inclusive $100 threshold, consistent with the report and protected contract.",
+  "changed_files": [
+    "checkout.py"
+  ],
+  "limitation": "Automated local case; authenticated human approval was not recorded. Switch 0.31.0 omits required sender type metadata."
+}

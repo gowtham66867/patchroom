@@ -1,0 +1,11 @@
+test_above_threshold (test_checkout.ShippingContract) ... ok
+test_below_threshold (test_checkout.ShippingContract) ... ok
+test_decimal_input (test_checkout.ShippingContract) ... ok
+test_exact_threshold (test_checkout.ShippingContract) ... ok
+test_invalid_amounts (test_checkout.ShippingContract) ... ok
+test_zero (test_checkout.ShippingContract) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.000s
+
+OK

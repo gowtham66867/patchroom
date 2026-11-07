@@ -1,0 +1,82 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:04.103
+PatchRoom brings bug reproduction, patch generation and independent verification into one Switch room.
+
+00:00:04.103 --> 00:00:08.207
+This is a walkthrough of evidence from an actual three agent run on November sixth.
+
+00:00:08.207 --> 00:00:12.311
+It is not a recording of live execution.
+
+00:00:12.311 --> 00:00:16.415
+The test report was explicitly automated.
+
+00:00:16.415 --> 00:00:20.144
+The checkout policy says shipping is free at one hundred dollars or more.
+
+00:00:20.144 --> 00:00:23.873
+The triager ran the saved regression contract.
+
+00:00:23.873 --> 00:00:27.602
+Six tests executed.
+
+00:00:27.602 --> 00:00:31.331
+Two assertions failed at the exact one hundred dollar boundary, for string and decimal inputs.
+
+00:00:31.331 --> 00:00:35.060
+The agent posted the failure and handed the case to the engineer through Switch.
+
+00:00:35.060 --> 00:00:38.993
+The engineer inspected the evidence and authored a separate candidate file.
+
+00:00:38.993 --> 00:00:42.926
+The strict greater than comparison excluded equality.
+
+00:00:42.926 --> 00:00:46.859
+The candidate changes it to greater than or equal to.
+
+00:00:46.859 --> 00:00:50.791
+This was authored by the live engineer agent, rather than produced by the scripted replay.
+
+00:00:50.791 --> 00:00:54.724
+The engineer handed the candidate and explanation to the verifier.
+
+00:00:54.724 --> 00:00:59.554
+The verifier independently checked both source copies against the same saved contract.
+
+00:00:59.554 --> 00:01:04.384
+The baseline still failed the original two assertions.
+
+00:01:04.384 --> 00:01:09.213
+The candidate passed all six checks, with no errors or skips.
+
+00:01:09.213 --> 00:01:14.043
+The review packet preserves command output, the source diff, source hashes, and the protected contract hash.
+
+00:01:14.043 --> 00:01:18.496
+PatchRoom stopped at awaiting human review.
+
+00:01:18.496 --> 00:01:22.949
+No human decision was recorded.
+
+00:01:22.949 --> 00:01:27.403
+This was an automated local case, and Switch version zero point thirty one omits the sender type metadata required by the review checks.
+
+00:01:27.403 --> 00:01:31.856
+The application refuses to infer identity from a display name.
+
+00:01:31.856 --> 00:01:36.309
+Passing these tests proves configured fixture behavior, not production correctness.
+
+00:01:36.309 --> 00:01:42.378
+The repository includes thirty five passing workflow and integration tests, an additional configured Python repository example, restart recovery, preserved proposal attempts, and the three agent Switch template.
+
+00:01:42.378 --> 00:01:48.447
+Explore the actual evidence and source repository from the project page.
+
+00:01:48.447 --> 00:01:54.516
+The hosted walkthrough presents archived results.
+
+00:01:54.516 --> 00:02:00.585
+Run the coding workflow locally through Switch Console.

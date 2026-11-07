@@ -1,0 +1,10 @@
+{
+  "name": "local-python-tax",
+  "root": ".",
+  "source_files": ["tax.py"],
+  "test_files": ["test_tax.py"],
+  "reproduction_test": "test_tax.TaxContract.test_round_half_up",
+  "min_tests": 3,
+  "timeout_seconds": 15,
+  "output_limit": 131072
+}

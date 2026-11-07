@@ -1,0 +1,11 @@
+PatchRoom brings bug reproduction, patch generation and independent verification into one Switch room. This is a walkthrough of evidence from an actual three agent run on November sixth. It is not a recording of live execution. The test report was explicitly automated.
+
+The checkout policy says shipping is free at one hundred dollars or more. The triager ran the saved regression contract. Six tests executed. Two assertions failed at the exact one hundred dollar boundary, for string and decimal inputs. The agent posted the failure and handed the case to the engineer through Switch.
+
+The engineer inspected the evidence and authored a separate candidate file. The strict greater than comparison excluded equality. The candidate changes it to greater than or equal to. This was authored by the live engineer agent, rather than produced by the scripted replay. The engineer handed the candidate and explanation to the verifier.
+
+The verifier independently checked both source copies against the same saved contract. The baseline still failed the original two assertions. The candidate passed all six checks, with no errors or skips. The review packet preserves command output, the source diff, source hashes, and the protected contract hash.
+
+PatchRoom stopped at awaiting human review. No human decision was recorded. This was an automated local case, and Switch version zero point thirty one omits the sender type metadata required by the review checks. The application refuses to infer identity from a display name. Passing these tests proves configured fixture behavior, not production correctness.
+
+The repository includes thirty five passing workflow and integration tests, an additional configured Python repository example, restart recovery, preserved proposal attempts, and the three agent Switch template. Explore the actual evidence and source repository from the project page. The hosted walkthrough presents archived results. Run the coding workflow locally through Switch Console.

@@ -1,0 +1,27 @@
+test_above_threshold (test_checkout.ShippingContract) ... ok
+test_below_threshold (test_checkout.ShippingContract) ... ok
+test_decimal_input (test_checkout.ShippingContract) ... FAIL
+test_exact_threshold (test_checkout.ShippingContract) ... FAIL
+test_invalid_amounts (test_checkout.ShippingContract) ... ok
+test_zero (test_checkout.ShippingContract) ... ok
+
+======================================================================
+FAIL: test_decimal_input (test_checkout.ShippingContract)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<test-copy>/test_checkout.py", line 20, in test_decimal_input
+    self.assertEqual(shipping_cost(Decimal("100")), Decimal("0.00"))
+AssertionError: Decimal('5.00') != Decimal('0.00')
+
+======================================================================
+FAIL: test_exact_threshold (test_checkout.ShippingContract)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<test-copy>/test_checkout.py", line 14, in test_exact_threshold
+    self.assertEqual(shipping_cost("100.00"), Decimal("0.00"))
+AssertionError: Decimal('5.00') != Decimal('0.00')
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.001s
+
+FAILED (failures=2)
