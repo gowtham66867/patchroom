@@ -3,7 +3,7 @@
 **Hackathon:** Flip the Switch 2026 · Best Business Workflow
 
 - [Public demo on Texmed Google Cloud](https://patchroom-demo-412542191970.asia-south1.run.app/)
-- [Gemini-narrated evidence film (2:27)](https://patchroom-demo-412542191970.asia-south1.run.app/gemini-walkthrough.mp4)
+- [Gemini-narrated evidence film on YouTube (2:27)](https://youtu.be/mxr_YX7w-ps)
 - [Public source](https://github.com/gowtham66867/patchroom)
 - [Sanitized live evidence](evidence/live-run/README.md)
 - [Website source](website/) and narrated evidence walkthrough

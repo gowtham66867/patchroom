@@ -2,7 +2,9 @@
 
 Public demo: https://patchroom-demo-412542191970.asia-south1.run.app/
 
-Video: https://patchroom-demo-412542191970.asia-south1.run.app/gemini-walkthrough.mp4
+YouTube video: https://youtu.be/mxr_YX7w-ps
+
+MP4: https://patchroom-demo-412542191970.asia-south1.run.app/gemini-walkthrough.mp4
 
 Source: https://github.com/gowtham66867/patchroom
 
