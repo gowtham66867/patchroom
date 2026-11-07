@@ -2,6 +2,8 @@
 
 **Hackathon:** Flip the Switch 2026 · Best Business Workflow
 
+- [Public demo on Texmed Google Cloud](https://patchroom-demo-412542191970.asia-south1.run.app/)
+- [Two-minute evidence walkthrough video](https://patchroom-demo-412542191970.asia-south1.run.app/walkthrough.mp4)
 - [Public source](https://github.com/gowtham66867/patchroom)
 - [Sanitized live evidence](evidence/live-run/README.md)
 - [Website source](website/) and narrated evidence walkthrough

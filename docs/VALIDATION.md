@@ -86,7 +86,23 @@ exercise the supported authenticated schema. A server exposing reliable
 sender_kind or a separately validated authenticated identity adapter is needed
 before claiming a complete human-report-to-acceptance demonstration.
 
-No video was recorded or published. No GitHub push, PR, merge, deployment,
-hackathon registration or submission was performed. Local PR materials are
-prepared; publication remains a separate action. Test results establish the
-configured fixture behavior, not production correctness.
+## Publication on November 7, 2026
+
+The source is public at https://github.com/gowtham66867/patchroom. GitHub Actions
+ran the 35-test suite successfully. A separate static demo service was deployed
+under the Texmed Google Cloud account to:
+https://patchroom-demo-412542191970.asia-south1.run.app/
+
+The site includes a 120.7-second narrated evidence presentation, English captions,
+interactive stage controls, sanitized actual handoffs and test outputs. The video
+is labeled as an archived-evidence walkthrough, not a live screen recording.
+
+Anonymous homepage access returned HTTP 200. An anonymous video range request
+returned HTTP 206. Browser QA confirmed the verification tab works and video
+metadata loads with no media error. The hosted page does not execute Python,
+repositories, agents or models. Those components run locally through Switch.
+
+No hackathon registration or submission was automated. Final submission is a
+manual entrant action under the event rules. No PR, merge or production code
+change in an external target repository was performed. Test results establish
+configured behavior, not production correctness.
