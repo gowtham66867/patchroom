@@ -2,7 +2,7 @@
 
 Public demo: https://patchroom-demo-412542191970.asia-south1.run.app/
 
-Video: https://patchroom-demo-412542191970.asia-south1.run.app/walkthrough.mp4
+Video: https://patchroom-demo-412542191970.asia-south1.run.app/gemini-walkthrough.mp4
 
 Source: https://github.com/gowtham66867/patchroom
 
@@ -35,7 +35,7 @@ gcloud run deploy patchroom-demo --source=. \
 - Cloud Run reported the revision serving 100% of traffic.
 - Anonymous GET / returned HTTP 200.
 - Anonymous video byte-range request returned HTTP 206.
-- Local media probe confirmed a 120.7-second MP4.
+- Local media probe confirmed a 146.5-second Gemini-narrated 1080p MP4.
 - Browser QA confirmed stage switching and loaded video metadata with no error.
 - Public source and actual evidence are linked from the deployed page.
 

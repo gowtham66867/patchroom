@@ -1,0 +1,13 @@
+An AI can suggest a fix in seconds. But who reproduced the bug? Which code was tested? And did the fix really work? PatchRoom brings those answers into one Switch room. This film presents archived evidence from an actual three-agent run.
+
+A triager reproduces the issue. An engineer authors a minimal candidate. A verifier independently checks the result. Switch connects their conversation and handoffs. PatchRoom preserves the state, source snapshots, test contract and proposal history for review.
+
+The report is simple. Shipping should be free at one hundred dollars or more. At exactly one hundred, the checkout still charges five. In the actual automated case, the triager ran six checks. Two assertions failed. The failure was reproduced before a fix was proposed.
+
+The engineer found the cause: a strict greater-than comparison excludes the boundary. The authored candidate adds equality. One source file changes. The baseline and protected tests stay intact. The engineer then hands the candidate to a separate verifier.
+
+The verifier reruns both copies against the same saved contract. The baseline still fails two assertions. The candidate passes all six checks, with no errors or skips. Source and contract hashes identify exactly what was tested. The review packet preserves the diff and command output.
+
+Passing tests does not grant approval. This was an automated local report, with no authenticated human reporter. The installed Switch version omits sender-type metadata required by our review gate. PatchRoom stops at awaiting human review. No acceptance or merge is claimed.
+
+Thirty-five workflow and integration tests pass locally and in GitHub Actions. Explore the source, real handoffs and verification evidence. The public Texmed deployment hosts this walkthrough. Agents run locally through Switch Console. PatchRoom: three agents, one reviewable fix.

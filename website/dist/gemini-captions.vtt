@@ -1,0 +1,103 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:02.755
+An AI can suggest a fix in seconds.
+
+00:00:02.755 --> 00:00:13.147
+But who reproduced the bug? Which code was tested? And did the fix really work? PatchRoom brings those answers into one Switch room.
+
+00:00:13.147 --> 00:00:18.500
+This film presents archived evidence from an actual three-agent run.
+
+00:00:18.500 --> 00:00:20.988
+A triager reproduces the issue.
+
+00:00:20.988 --> 00:00:24.197
+An engineer authors a minimal candidate.
+
+00:00:24.197 --> 00:00:27.647
+A verifier independently checks the result.
+
+00:00:27.647 --> 00:00:31.499
+Switch connects their conversation and handoffs.
+
+00:00:31.499 --> 00:00:39.121
+PatchRoom preserves the state, source snapshots, test contract and proposal history for review.
+
+00:00:39.121 --> 00:00:40.781
+The report is simple.
+
+00:00:40.781 --> 00:00:45.127
+Shipping should be free at one hundred dollars or more.
+
+00:00:45.127 --> 00:00:49.552
+At exactly one hundred, the checkout still charges five.
+
+00:00:49.552 --> 00:00:54.056
+In the actual automated case, the triager ran six checks.
+
+00:00:54.056 --> 00:00:55.794
+Two assertions failed.
+
+00:00:55.794 --> 00:00:59.982
+The failure was reproduced before a fix was proposed.
+
+00:00:59.982 --> 00:01:06.682
+The engineer found the cause: a strict greater-than comparison excludes the boundary.
+
+00:01:06.682 --> 00:01:09.598
+The authored candidate adds equality.
+
+00:01:09.598 --> 00:01:11.489
+One source file changes.
+
+00:01:11.489 --> 00:01:15.036
+The baseline and protected tests stay intact.
+
+00:01:15.036 --> 00:01:19.843
+The engineer then hands the candidate to a separate verifier.
+
+00:01:19.843 --> 00:01:24.977
+The verifier reruns both copies against the same saved contract.
+
+00:01:24.977 --> 00:01:28.186
+The baseline still fails two assertions.
+
+00:01:28.186 --> 00:01:33.079
+The candidate passes all six checks, with no errors or skips.
+
+00:01:33.079 --> 00:01:37.892
+Source and contract hashes identify exactly what was tested.
+
+00:01:37.892 --> 00:01:42.384
+The review packet preserves the diff and command output.
+
+00:01:42.384 --> 00:01:45.714
+Passing tests does not grant approval.
+
+00:01:45.714 --> 00:01:52.112
+This was an automated local report, with no authenticated human reporter.
+
+00:01:52.112 --> 00:01:59.473
+The installed Switch version omits sender-type metadata required by our review gate.
+
+00:01:59.473 --> 00:02:03.066
+PatchRoom stops at awaiting human review.
+
+00:02:03.066 --> 00:02:06.045
+No acceptance or merge is claimed.
+
+00:02:06.045 --> 00:02:11.828
+Thirty-five workflow and integration tests pass locally and in GitHub Actions.
+
+00:02:11.828 --> 00:02:16.276
+Explore the source, real handoffs and verification evidence.
+
+00:02:16.276 --> 00:02:20.131
+The public Texmed deployment hosts this walkthrough.
+
+00:02:20.131 --> 00:02:23.244
+Agents run locally through Switch Console.
+
+00:02:23.244 --> 00:02:26.506
+PatchRoom: three agents, one reviewable fix.

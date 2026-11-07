@@ -1,0 +1,50 @@
+{
+  "model": "gemini-2.5-flash-tts",
+  "voice": "Kore",
+  "duration": 146.51,
+  "presentation": "Edited archived-evidence motion graphics; not a live execution recording",
+  "scenes": [
+    {
+      "scene": 1,
+      "title": "A patch is a claim.",
+      "start": 0,
+      "duration": 18.5
+    },
+    {
+      "scene": 2,
+      "title": "Three agents. One room.",
+      "start": 18.5,
+      "duration": 20.62
+    },
+    {
+      "scene": 3,
+      "title": "The boundary that broke.",
+      "start": 39.12,
+      "duration": 20.86
+    },
+    {
+      "scene": 4,
+      "title": "One character. Clear intent.",
+      "start": 59.98,
+      "duration": 19.86
+    },
+    {
+      "scene": 5,
+      "title": "A fix with receipts.",
+      "start": 79.84,
+      "duration": 22.54
+    },
+    {
+      "scene": 6,
+      "title": "Know when to stop.",
+      "start": 102.38,
+      "duration": 23.66
+    },
+    {
+      "scene": 7,
+      "title": "Inspect the evidence.",
+      "start": 126.05,
+      "duration": 20.46
+    }
+  ]
+}
